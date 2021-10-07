@@ -1,14 +1,30 @@
 function hasTargetSum(array, target) {
-  // Write your algorithm here
+for (let i = 0; i < array.length; i++) {
+  let eleOne = array[i]; 
+  let comp = target - eleOne; 
+  // for (let j = i + 1; j < array.length; j++) {
+  //   if (array[j] === comp) {
+  //     return true;
+  //   }
+  // }
+  if (array.includes(comp)) {
+    return true;
+  }
+ }
+ return false;
 }
 
 /* 
   Write the Big O time complexity of your function here
-*/
+*/ //0(1) is the sum up notation
+//0(n2) is the nested iteration
 
 /* 
   Add your pseudocode here
-*/
+*///iterate through array
+//foreach or nested foreach? 
+//nested loops. if ele1+ele2 = target, return true
+
 
 /*
   Add written explanation of your solution here
